@@ -14,7 +14,7 @@ app.use(bodyParser.urlencoded({
 app.use(bodyParser.json());
 
 app.get('/', (req, res)=>{
-    res.status(200).send({title: "Hello world"});
+    res.status(200).send("Hello world");
 });
 
 app.post("/save", async (req,res)=>{
